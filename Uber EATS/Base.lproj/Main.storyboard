@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Uber_EATS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="x2L-GK-Jda">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="yemekHucre" id="TGM-WZ-FtW" customClass="YemekTableViewCell" customModule="Uber_EATS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TGM-WZ-FtW" id="HEl-yC-bWl">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="izgaratavuk" translatesAutoresizingMaskIntoConstraints="NO" id="sSf-TE-T09">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="IbQ-vT-0GO"/>
+                                                        <constraint firstAttribute="width" constant="100" id="aF8-3T-Xyu"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tavuk Izgara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhy-rs-QY1">
+                                                    <rect key="frame" x="133" y="11" width="110" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="86 TL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ky8-hq-Zj4">
+                                                    <rect key="frame" x="133" y="68" width="45" height="21"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="linkColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtF-5F-awV">
+                                                    <rect key="frame" x="273" y="32.666666666666671" width="114" height="34.666666666666671"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Sepete Ekle">
+                                                        <color key="baseForegroundColor" red="0.76942896839999997" green="0.20529386999999999" blue="0.33352736929999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="sepeteEkle:" destination="TGM-WZ-FtW" eventType="touchUpInside" id="UNK-WM-7F6"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jhy-rs-QY1" firstAttribute="leading" secondItem="sSf-TE-T09" secondAttribute="trailing" constant="33" id="7KL-92-MEd"/>
+                                                <constraint firstItem="WtF-5F-awV" firstAttribute="centerY" secondItem="HEl-yC-bWl" secondAttribute="centerY" id="Da8-C9-LBU"/>
+                                                <constraint firstItem="sSf-TE-T09" firstAttribute="leading" secondItem="HEl-yC-bWl" secondAttribute="leading" id="GO8-aY-kOl"/>
+                                                <constraint firstAttribute="bottom" secondItem="sSf-TE-T09" secondAttribute="bottom" id="PHy-ra-WeF"/>
+                                                <constraint firstItem="sSf-TE-T09" firstAttribute="top" secondItem="HEl-yC-bWl" secondAttribute="top" id="VGQ-Xd-0Uz"/>
+                                                <constraint firstItem="Ky8-hq-Zj4" firstAttribute="bottom" secondItem="HEl-yC-bWl" secondAttribute="bottomMargin" id="Y2S-0e-kU1"/>
+                                                <constraint firstItem="Ky8-hq-Zj4" firstAttribute="leading" secondItem="sSf-TE-T09" secondAttribute="trailing" constant="33" id="e5k-sW-43v"/>
+                                                <constraint firstAttribute="trailing" secondItem="WtF-5F-awV" secondAttribute="trailing" constant="6" id="iiC-kI-MQb"/>
+                                                <constraint firstItem="WtF-5F-awV" firstAttribute="top" secondItem="HEl-yC-bWl" secondAttribute="top" constant="32.670000000000002" id="ojd-bj-Kpu"/>
+                                                <constraint firstItem="jhy-rs-QY1" firstAttribute="top" secondItem="HEl-yC-bWl" secondAttribute="topMargin" id="vow-V4-SnV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelYemekAdi" destination="jhy-rs-QY1" id="xdc-to-wB8"/>
+                                            <outlet property="labelYemekFiyat" destination="Ky8-hq-Zj4" id="7oC-Rb-vw7"/>
+                                            <outlet property="yemekResimImage" destination="sSf-TE-T09" id="nZ3-Uh-3IX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x2L-GK-Jda" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Qjg-uS-OIl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x2L-GK-Jda" secondAttribute="bottom" id="gJ6-m7-7wh"/>
+                            <constraint firstItem="x2L-GK-Jda" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ij6-eq-hD0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x2L-GK-Jda" secondAttribute="trailing" id="xwC-Xf-piM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="yemeklerTableView" destination="x2L-GK-Jda" id="Rfh-Sj-YyE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87.786259541984734" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="izgaratavuk" width="256" height="256"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
